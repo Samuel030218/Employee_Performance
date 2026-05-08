@@ -7,16 +7,26 @@ The app uses a stacked ensemble model (tuned Random Forest + tuned Gradient Boos
 Predictions can be made for a single employee via manual input or for multiple employees via CSV batch upload.
 
 ## Features
-Interactive Streamlit UI for HR managers.
+- **Interactive Streamlit UI** for HR managers.
 
-Manual input form: Enter employee details and get instant predictions.
+- **Manual input form** with dropdowns, sliders, and number fields: Enter employee details and get instant predictions.
 
-Batch upload: Upload a CSV file of employees for bulk predictions.
+- **Batch upload**: Upload a CSV file of employees for bulk predictions.
+  
+-  **Automatic categorical mapping** (e.g., Job Level, Work-Life Balance, Attrition).
+  
+-  **Downloadable CSV templates**: Empty CSV and example CSV provided for easy formatting.
 
-Downloadable templates: Empty CSV and example CSV provided for easy formatting.
+-  **Feature engineering**: Includes derived features like TenureRatio and PromotionGap.
 
-Feature engineering: Includes derived features like TenureRatio and PromotionGap.
+-  **Ngrok integration**: Easily share the app via a public tunnel.
 
-Ngrok integration: Easily share the app via a public tunnel.
+-  **Deployment ready**: Model saved with joblib for fast loading.
 
-Deployment ready: Model saved with joblib for fast loading.
+## 🛠️ Tech Stack
+- **Python 3.9+**
+- **Streamlit** – Web app framework
+- **Pandas** – Data handling
+- **Scikit-learn** – Machine learning model
+- **Joblib** – Model persistence
+- **Pyngrok** – Public tunneling (optional)
